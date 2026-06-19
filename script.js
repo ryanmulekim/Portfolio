@@ -199,14 +199,14 @@ function initScrambleText() {
   const letters =
     "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 
-  const originalText = element.dataset.text || element.textContent;
-
   document.querySelectorAll(".scramble-text").forEach((element) => {
-    const originalText = element.dataset.text;
+
+    const originalText =
+      element.dataset.text || element.textContent;
 
     let revealed = false;
 
-    // Gera um texto embaralhado
+    // Gera texto embaralhado
     function randomizeText() {
       if (revealed) return;
 
@@ -220,16 +220,17 @@ function initScrambleText() {
         .join("");
     }
 
-    // Mantém as letras se mexendo
+    // Inicia embaralhado
     randomizeText();
 
-    const idleAnimation = setInterval(() => {
+    // Mantém animação "Matrix"
+    setInterval(() => {
       if (!revealed) {
         randomizeText();
       }
     }, 120);
 
-    // Revelação no hover
+    // Revela ao passar o mouse
     element.addEventListener("mouseenter", () => {
       revealed = true;
 
@@ -254,11 +255,11 @@ function initScrambleText() {
           element.textContent = originalText;
         }
 
-        iteration += 1 / 2;
+        iteration += 0.5;
       }, 30);
     });
 
-    // Volta a embaralhar quando sai o mouse
+    // Volta para o modo Matrix ao sair do mouse
     element.addEventListener("mouseleave", () => {
       revealed = false;
     });
