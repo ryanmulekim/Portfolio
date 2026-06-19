@@ -40,13 +40,13 @@ function initActiveLink() {
           links.forEach((link) => {
             link.classList.toggle(
               "active",
-              link.getAttribute("href") === `#${entry.target.id}`
+              link.getAttribute("href") === `#${entry.target.id}`,
             );
           });
         }
       });
     },
-    { rootMargin: "-45% 0px -50% 0px" }
+    { rootMargin: "-45% 0px -50% 0px" },
   );
 
   sections.forEach((section) => observer.observe(section));
@@ -61,7 +61,7 @@ function initTypingRole() {
   if (!roles.length) return;
 
   const prefersReduced = window.matchMedia(
-    "(prefers-reduced-motion: reduce)"
+    "(prefers-reduced-motion: reduce)",
   ).matches;
 
   const textNode = el.querySelector(".typed-text");
@@ -116,7 +116,7 @@ function initScrollReveal() {
         }
       });
     },
-    { threshold: 0.15 }
+    { threshold: 0.15 },
   );
 
   items.forEach((item) => observer.observe(item));
@@ -129,64 +129,64 @@ function initContactForm() {
   if (!form || !status) return;
 
   form.addEventListener("submit", (event) => {
-  event.preventDefault();
+    event.preventDefault();
 
-  const nameInput = form.querySelector("#name");
-  const emailInput = form.querySelector("#email");
-  const messageInput = form.querySelector("#message");
+    const nameInput = form.querySelector("#name");
+    const emailInput = form.querySelector("#email");
+    const messageInput = form.querySelector("#message");
 
-  const name = nameInput.value.trim();
-  const email = emailInput.value.trim();
-  const message = messageInput.value.trim();
+    const name = nameInput.value.trim();
+    const email = emailInput.value.trim();
+    const message = messageInput.value.trim();
 
-  // Limpa erros anteriores
-  [nameInput, emailInput, messageInput].forEach((field) => {
-    field.classList.remove("field-error");
+    // Limpa erros anteriores
+    [nameInput, emailInput, messageInput].forEach((field) => {
+      field.classList.remove("field-error");
+    });
+
+    if (!name) {
+      nameInput.classList.add("field-error");
+      nameInput.focus();
+
+      status.textContent = "Informe seu nome.";
+      status.style.color = "#F2A93B";
+      return;
+    }
+
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!email) {
+      emailInput.classList.add("field-error");
+      emailInput.focus();
+
+      status.textContent = "Informe seu e-mail.";
+      status.style.color = "#F2A93B";
+      return;
+    }
+
+    if (!emailPattern.test(email)) {
+      emailInput.classList.add("field-error");
+      emailInput.focus();
+
+      status.textContent = "Informe um e-mail válido.";
+      status.style.color = "#F2A93B";
+      return;
+    }
+
+    if (!message) {
+      messageInput.classList.add("field-error");
+      messageInput.focus();
+
+      status.textContent = "Digite sua mensagem.";
+      status.style.color = "#F2A93B";
+      return;
+    }
+
+    status.textContent = `Mensagem pronta para envio, ${name}!`;
+    status.style.color = "#4FD8C4";
+
+    form.reset();
   });
-
-  if (!name) {
-    nameInput.classList.add("field-error");
-    nameInput.focus();
-
-    status.textContent = "Informe seu nome.";
-    status.style.color = "#F2A93B";
-    return;
-  }
-
-  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-  if (!email) {
-    emailInput.classList.add("field-error");
-    emailInput.focus();
-
-    status.textContent = "Informe seu e-mail.";
-    status.style.color = "#F2A93B";
-    return;
-  }
-
-  if (!emailPattern.test(email)) {
-    emailInput.classList.add("field-error");
-    emailInput.focus();
-
-    status.textContent = "Informe um e-mail válido.";
-    status.style.color = "#F2A93B";
-    return;
-  }
-
-  if (!message) {
-    messageInput.classList.add("field-error");
-    messageInput.focus();
-
-    status.textContent = "Digite sua mensagem.";
-    status.style.color = "#F2A93B";
-    return;
-  }
-
-  status.textContent = `Mensagem pronta para envio, ${name}!`;
-  status.style.color = "#4FD8C4";
-
-  form.reset();
-});
 }
 
 /* ---------------- Ano atual no rodapé ---------------- */
@@ -198,6 +198,8 @@ function initFooterYear() {
 function initScrambleText() {
   const letters =
     "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+
+  const originalText = element.dataset.text || element.textContent;
 
   document.querySelectorAll(".scramble-text").forEach((element) => {
     const originalText = element.dataset.text;
