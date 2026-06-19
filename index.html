@@ -1,0 +1,619 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ryan Moraes — Desenvolvedor Full Stack & Power Platform</title>
+    <meta
+      name="description"
+      content="Portfólio de Lucas Andrade, desenvolvedor full stack especializado em Power Platform: aplicações web, automações e soluções low-code integradas."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ===================== NAV ===================== -->
+    <header class="nav">
+      <div class="container nav-inner">
+        <a href="#inicio" class="logo"
+          ><span class="bracket">&lt;/&gt;</span> Ryan Moraes<span class="dot"
+            >.</span
+          ></a
+        >
+
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#experiencia">Experiência</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+
+        <a href="#contato" class="nav-cta">Vamos falar</a>
+
+        <button
+          class="nav-toggle"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow hero-kicker">
+            DESENVOLVEDOR FULL STACK · POWER PLATFORM
+          </p>
+          <h1 class="hero-title">
+            Eu construo pontes entre <span class="accent-teal">código</span> e
+            <span class="accent-amber">automação</span>.
+          </h1>
+
+          <p
+            class="hero-role"
+            data-typing
+            data-roles='["Desenvolvedor Full Stack", "Especialista em Power Platform", "Automação de Processos (RPA)", "Integração de Sistemas"]'
+          >
+            <span class="typed-text"></span><span class="cursor"></span>
+          </p>
+
+          <p class="hero-desc">
+            Desenvolvo aplicações web completas e soluções low-code que
+            conversam entre si — do back-end em Node.js aos fluxos do Power
+            Automate, do front-end em React aos apps do Power Apps. Transformo
+            processos manuais em sistemas conectados.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projetos" class="btn btn-primary">Ver projetos</a>
+            <a href="#contato" class="btn btn-ghost">Falar comigo</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <svg viewBox="0 0 480 460" xmlns="http://www.w3.org/2000/svg">
+            <!-- ramo "código" -->
+            <rect
+              class="flow-node-alt"
+              x="20"
+              y="40"
+              width="150"
+              height="46"
+              rx="6"
+            ></rect>
+            <text class="flow-label" x="36" y="68">const app = init()</text>
+
+            <rect
+              class="flow-node-alt"
+              x="20"
+              y="120"
+              width="150"
+              height="46"
+              rx="6"
+            ></rect>
+            <text class="flow-label" x="36" y="148">api.connect(db)</text>
+
+            <rect
+              class="flow-node-alt"
+              x="20"
+              y="200"
+              width="150"
+              height="46"
+              rx="6"
+            ></rect>
+            <text class="flow-label" x="36" y="228">return response</text>
+
+            <path class="flow-line" d="M170 63 H 230 V 145 H 170"></path>
+            <path class="flow-line" d="M170 223 H 230 V 145"></path>
+
+            <!-- nó central de junção -->
+            <circle class="flow-pulse" cx="240" cy="145" r="4"></circle>
+
+            <!-- ramo "power platform" -->
+            <rect
+              class="flow-node"
+              x="280"
+              y="20"
+              width="170"
+              height="46"
+              rx="23"
+            ></rect>
+            <text class="flow-label" x="305" y="48">Gatilho: Get item</text>
+
+            <rect
+              class="flow-node"
+              x="280"
+              y="100"
+              width="170"
+              height="46"
+              rx="23"
+            ></rect>
+            <text class="flow-label" x="305" y="128">Power Automate</text>
+
+            <rect
+              class="flow-node"
+              x="280"
+              y="180"
+              width="170"
+              height="46"
+              rx="23"
+            ></rect>
+            <text class="flow-label" x="305" y="208">
+              Dataverse / SharePoint
+            </text>
+
+            <rect
+              class="flow-node"
+              x="280"
+              y="260"
+              width="170"
+              height="46"
+              rx="23"
+            ></rect>
+            <text class="flow-label" x="305" y="288">
+              Power BI / Power Apps
+            </text>
+
+            <path class="flow-line" d="M280 43 H 250 V 145 H 280"></path>
+            <path class="flow-line" d="M280 123 H 250"></path>
+            <path class="flow-line" d="M280 203 H 250 V 145"></path>
+            <path class="flow-line" d="M280 283 H 250 V 145"></path>
+
+            <!-- saída comum -->
+            <path class="flow-line" d="M240 145 V 320"></path>
+            <rect
+              class="flow-node-alt"
+              x="150"
+              y="330"
+              width="180"
+              height="50"
+              rx="6"
+            ></rect>
+            <text class="flow-label" x="178" y="360" style="fill: #e8ecf4">
+              Solução integrada
+            </text>
+            <circle class="flow-pulse" cx="240" cy="330" r="4"></circle>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SOBRE ===================== -->
+    <section class="section" id="sobre">
+      <div class="container about-grid">
+        <div class="about-card reveal">
+          <div><span class="line">// perfil.json</span></div>
+          <div>{</div>
+          <div>
+            &nbsp;&nbsp;<span class="key">"nome"</span>:
+            <span class="str">"Ryan Moraes"</span>,
+          </div>
+          <div>
+            &nbsp;&nbsp;<span class="key">"funcao"</span>:
+            <span class="str">"Full Stack Developer"</span>,
+          </div>
+          <div>
+            &nbsp;&nbsp;<span class="key">"especialidade"</span>:
+            <span class="str">"Power Platform"</span>,
+          </div>
+          <div>
+            &nbsp;&nbsp;<span class="key">"localizacao"</span>:
+            <span class="str">"Brasília, DF"</span>,
+          </div>
+          <div>&nbsp;&nbsp;<span class="key">"foco"</span>: [</div>
+          <div>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="str">"código"</span>,
+            <span class="str">"low-code"</span>,
+          </div>
+          <div>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="str">"automação"</span>
+          </div>
+          <div>&nbsp;&nbsp;]</div>
+          <div>}</div>
+        </div>
+
+        <div class="about-text reveal">
+          <p class="eyebrow">SOBRE MIM</p>
+          <h2 class="section-title">Um pé no código, outro na automação.</h2>
+          <p>
+            Sou desenvolvedor full stack com mais de seis anos construindo
+            aplicações web e, nos últimos anos, mergulhei de cabeça no
+            ecossistema Power Platform. Hoje atuo nas duas frentes: quando o
+            problema pede flexibilidade total, escrevo código; quando pede
+            velocidade e governança, modelo a solução em Power Apps, Power
+            Automate e Dataverse.
+          </p>
+         <p
+  class="scramble-text"
+  data-text="Também sou muito fã de animes, séries, jogos e filmes :)"
+></p>
+
+          <div class="about-stats">
+            <div class="stat">
+              <div class="stat-num">4<span class="unit">+</span></div>
+              <div class="stat-label">Anos de experiência</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">20<span class="unit">+</span></div>
+              <div class="stat-label">Projetos Desenvolvidos</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">4</div>
+              <div class="stat-label">Certificações Microsoft</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== HABILIDADES ===================== -->
+    <section class="section" id="habilidades">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">HABILIDADES</p>
+          <h2 class="section-title">Duas stacks, um único objetivo.</h2>
+          <p class="section-sub">
+            Ferramentas que uso no dia a dia para construir e automatizar.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-panel code reveal">
+            <span class="skill-tag">// Código</span>
+            <h3>Desenvolvimento Full Stack</h3>
+            <div class="skill-list" style="margin-top: 18px">
+              <span class="skill-chip">JavaScript / TypeScript</span>
+              <span class="skill-chip">Java</span>
+              <span class="skill-chip">Angular</span>
+              <span class="skill-chip">React</span>
+              <span class="skill-chip">Keycloak</span>
+              <span class="skill-chip">Node.js</span>
+              <span class="skill-chip">Docker</span>
+              <span class="skill-chip">Postgresql</span>
+              <span class="skill-chip">SQL Server</span>
+              <span class="skill-chip">Spring</span>
+              <span class="skill-chip">Kafka</span>
+              <span class="skill-chip">Rabbitmq</span>
+              <span class="skill-chip">APIs REST</span>
+
+              <span class="skill-chip">Git / GitHub</span>
+            </div>
+          </div>
+
+          <div class="skill-panel power reveal">
+            <span class="skill-tag">⚡ Low-code</span>
+            <h3>Power Platform</h3>
+            <div class="skill-list" style="margin-top: 18px">
+              <span class="skill-chip">Power Apps</span>
+              <span class="skill-chip">Power Automate</span>
+              <span class="skill-chip">Power BI</span>
+              <span class="skill-chip">Power Point</span>
+              <span class="skill-chip">Dataverse</span>
+              <span class="skill-chip">Power Pages</span>
+              <span class="skill-chip">Copilot Studio</span>
+              <span class="skill-chip">SharePoint</span>
+              <span class="skill-chip">SharePoint List</span>
+              <span class="skill-chip">Teams</span>
+              <span class="skill-chip">Azure</span>
+              <span class="skill-chip">Planner / Project Plan</span>
+              <span class="skill-chip">Connectors personalizados</span>
+              <span class="skill-chip">Power Platform CLI</span>
+            </div>
+          </div>
+        </div>
+
+        <p class="skill-bridge reveal">
+          <span>Conector comum:</span> APIs REST e Connectors personalizados
+          ligam as duas stacks no mesmo fluxo de dados.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===================== PROJETOS ===================== -->
+    <section class="section" id="projetos">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">PROJETOS</p>
+          <h2 class="section-title">Trabalhos recentes</h2>
+          <p class="section-sub">
+            Uma seleção de projetos que combinam desenvolvimento tradicional e
+            soluções low-code. (dados fictícios)
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <span class="project-type fullstack">Full Stack</span>
+            <h3>Plataforma de Gestão de Pedidos</h3>
+            <p>
+              Aplicação web completa para controle de pedidos e estoque, com
+              painel administrativo, autenticação por papéis e relatórios em
+              tempo real.
+            </p>
+            <div class="project-stack">
+              <span>React</span><span>Node.js</span><span>PostgreSQL</span
+              ><span>Docker</span>
+            </div>
+            <a href="#" class="project-link">Ver case</a>
+          </article>
+
+          <article class="project-card reveal">
+            <span class="project-type platform">Power Platform</span>
+            <h3>Automação de Aprovação de Despesas</h3>
+            <p>
+              App em Power Apps integrado a um fluxo no Power Automate que
+              automatiza aprovações multinível, com dados centralizados no
+              Dataverse.
+            </p>
+            <div class="project-stack">
+              <span>Power Apps</span><span>Power Automate</span
+              ><span>Dataverse</span>
+            </div>
+            <a href="#" class="project-link">Ver case</a>
+          </article>
+
+          <article class="project-card reveal">
+            <span class="project-type hybrid">Híbrido</span>
+            <h3>Portal de Atendimento ao Cliente</h3>
+            <p>
+              Power Pages como front-end público, consumindo uma API própria em
+              .NET para regras de negócio complexas e integração com sistema
+              legado.
+            </p>
+            <div class="project-stack">
+              <span>Power Pages</span><span>.NET</span><span>Azure SQL</span>
+            </div>
+            <a href="#" class="project-link">Ver case</a>
+          </article>
+
+          <article class="project-card reveal">
+            <span class="project-type fullstack">Full Stack</span>
+            <h3>Dashboard Financeiro em Tempo Real</h3>
+            <p>
+              Visualização de indicadores financeiros com atualização via
+              WebSockets e exportação automática de relatórios em PDF.
+            </p>
+            <div class="project-stack">
+              <span>Vue.js</span><span>Express</span><span>Redis</span>
+            </div>
+            <a href="#" class="project-link">Ver case</a>
+          </article>
+
+          <article class="project-card reveal">
+            <span class="project-type platform">Power Platform</span>
+            <h3>Onboarding de Colaboradores</h3>
+            <p>
+              Fluxo automatizado que cria contas, agenda treinamentos e notifica
+              gestores a cada nova contratação, eliminando planilhas manuais.
+            </p>
+            <div class="project-stack">
+              <span>Power Automate</span><span>SharePoint</span
+              ><span>Teams</span>
+            </div>
+            <a href="#" class="project-link">Ver case</a>
+          </article>
+
+          <article class="project-card reveal">
+            <span class="project-type hybrid">Híbrido</span>
+            <h3>Copiloto Interno de Suporte</h3>
+            <p>
+              Agente conversacional no Copilot Studio conectado a uma base de
+              conhecimento própria via API, reduzindo tempo médio de resposta.
+            </p>
+            <div class="project-stack">
+              <span>Copilot Studio</span><span>Node.js</span
+              ><span>Azure AI Search</span>
+            </div>
+            <a href="#" class="project-link">Ver case</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== EXPERIÊNCIA ===================== -->
+    <section class="section" id="experiencia">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">EXPERIÊNCIA</p>
+          <h2 class="section-title">Trajetória profissional</h2>
+        </div>
+
+        <div class="timeline reveal">
+          <div class="timeline-item">
+            <span class="timeline-date">2026 — Atual</span>
+            <h3>Desenvolvedor Full Stack</h3>
+            <p class="role-company">
+              Auditoria do SUS Ministério da Saúde - Atual · Brasília, DF
+            </p>
+            <p>
+              Atuo no desenvolvimento e manutenção de soluções web voltadas ao
+              monitoramento e acompanhamento de atividades estratégicas.
+              Trabalho com tecnologias como React para construção de interfaces
+              modernas e responsivas, além da integração com Keycloak para
+              gerenciamento de identidade, autenticação e autorização de
+              usuários. Minha atuação envolve levantamento de requisitos,
+              implementação de funcionalidades, integração entre sistemas e
+              aprimoramento contínuo das aplicações, garantindo maior eficiência
+              operacional, segurança e escalabilidade das soluções.
+            </p>
+          </div>
+
+        
+          <div class="timeline-item">
+            <span class="timeline-date">2024 - Atual</span>
+            <h3>Consultor Power Platform & LGPD</h3>
+            <p class="role-company">Consórico INFRA S.A. · Remoto (PJ)</p>
+            <p>
+              Lidero iniciativas de transformação digital voltadas à conformidade com a LGPD, desenvolvendo soluções corporativas com Microsoft Power Platform. Minha atuação inclui a criação de aplicações em Power Apps para gestão e monitoramento de adequação, dashboards executivos em Power BI para acompanhamento de indicadores de privacidade e governança de dados, além da automação de fluxos, relatórios e planos de ação que apoiam a identificação, mitigação e acompanhamento de riscos relacionados ao tratamento de dados pessoais.
+
+          </div>
+          
+
+          <div class="timeline-item">
+            <span class="timeline-date">2024 — 2026</span>
+            <h3>Estágio Power Platform & Analista de Dados</h3>
+            <p class="role-company">INFRA S.A. · Brasília, DF</p>
+            <p>
+              Liderei o desenvolvimento de dezenas de ecossistemas digitais e
+              hubs temáticos, integrando dados, automação e inteligência de
+              negócios para apoiar a gestão estratégica.
+              <br />
+              <br />
+              • Modelagem, tratamento e governança de dados;
+              <br />
+              • Desenvolvimento de aplicações em Power Apps para gestão e
+              acompanhamento de processos;
+              <br />
+              • Construção de dashboards executivos em Power BI para
+              monitoramento de indicadores e apoio à tomada de decisão;
+              <br />
+              • Automação de fluxos e rotinas em Power Automate, incluindo
+              notificações, aprovações e distribuição automática de relatórios.
+              <br />
+              <br />
+
+              As soluções implementadas contribuíram para maior eficiência
+              operacional, centralização das informações e melhoria do
+              monitoramento gerencial.
+            </p>
+          </div>
+
+          <div class="timeline-item">
+            <span class="timeline-date">2023 — 2024</span>
+            <h3>Estágio Tribunal</h3>
+            <p class="role-company">TRT °10 Região · Brasília, DF</p>
+            <p>
+              Atuei no acompanhamento e tramitação de processos na área trabalhista, realizando atividades relacionadas à elaboração e gestão de mandados, intimações, editais e demais atos processuais. Também prestava suporte a advogados, partes e demais envolvidos, auxiliando no esclarecimento de dúvidas e garantindo o correto andamento dos procedimentos judiciais.
+
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CERTIFICAÇÕES ===================== -->
+    <!-- <section class="section" id="certificacoes">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">CERTIFICAÇÕES</p>
+          <h2 class="section-title">Certificações Microsoft</h2>
+        </div>
+
+        <div class="cert-grid">
+          <div class="cert-card reveal">
+            <div class="cert-code">PL-100</div>
+            <div class="cert-name">Power Platform App Maker</div>
+          </div>
+          <div class="cert-card reveal">
+            <div class="cert-code">PL-200</div>
+            <div class="cert-name">Power Platform Functional Consultant</div>
+          </div>
+          <div class="cert-card reveal">
+            <div class="cert-code">PL-400</div>
+            <div class="cert-name">Power Platform Developer</div>
+          </div>
+          <div class="cert-card reveal">
+            <div class="cert-code">AZ-204</div>
+            <div class="cert-name">Azure Developer Associate</div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- ===================== CONTATO ===================== -->
+    <section class="section" id="contato">
+      <div class="container contact-grid">
+        <div class="contact-info reveal">
+          <p class="eyebrow">CONTATO</p>
+          <h2 class="section-title">Vamos construir algo juntos?</h2>
+          <p>
+            Aberto a novos projetos, colaborações e oportunidades que envolvam
+            desenvolvimento full stack, Power Platform ou ambos.
+          </p>
+
+          <div class="contact-channels">
+            <a href="mailto:ryan.moraes.pereirabr@gmail.com" class="contact-channel">
+              <span class="ch-label">E-mail</span> ryan.moraes.pereirabr@gmail.com
+            </a>
+            <a
+              href="https://linkedin.com/in/seu-usuario"
+              target="_blank"
+              rel="noopener"
+              class="contact-channel"
+            >
+              <span class="ch-label">LinkedIn</span> /in/ryanmoraes
+            </a>
+            <a
+              href="https://github.com/seu-usuario"
+              target="_blank"
+              rel="noopener"
+              class="contact-channel"
+            >
+              <span class="ch-label">GitHub</span> /ryanmoraes
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contact-form" novalidate>
+          <div class="form-row">
+            <div class="field">
+              <label for="name">Nome</label>
+              <input type="text" id="name" name="name" placeholder="Seu nome" />
+            </div>
+            <div class="field">
+              <label for="email">E-mail</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="seu@email.com"
+              />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field full">
+              <label for="message">Mensagem</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                placeholder="Conte um pouco sobre o seu projeto..."
+              ></textarea>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar mensagem</button>
+          <p class="form-status" id="form-status"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <span
+          >© <span id="year"></span>  Ryan Moraes. Todos os direitos
+          reservados.</span
+        >
+        <span
+          >Desenvolvido com <a href="#inicio">react</a>.</span
+        >
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
