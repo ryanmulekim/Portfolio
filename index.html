@@ -19,6 +19,20 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- Custom cursor -->
+    <div class="cursor-outer" aria-hidden="true"></div>
+    <div class="cursor-inner" aria-hidden="true"></div>
+
+    <!-- Loader -->
+    <div class="loader" id="loader" aria-hidden="true">
+      <div class="loader-logo">&lt;/&gt;</div>
+      <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+      <span class="loader-text">Ryan Moraes</span>
+    </div>
+
+    <!-- Scroll progress -->
+    <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+
     <!-- ===================== NAV ===================== -->
     <header class="nav">
       <div class="container nav-inner">
@@ -39,6 +53,8 @@
           </ul>
         </nav>
 
+        
+
         <a href="#contato" class="nav-cta">Vamos falar</a>
 
         <button
@@ -53,6 +69,7 @@
 
     <!-- ===================== HERO ===================== -->
     <section class="hero" id="inicio">
+      <canvas id="hero-canvas" aria-hidden="true"></canvas>
       <div class="container hero-grid">
         <div>
           <p class="eyebrow hero-kicker">
@@ -80,6 +97,7 @@
 
           <div class="hero-actions">
             <a href="#projetos" class="btn btn-primary">Ver projetos</a>
+            
             <a href="#contato" class="btn btn-ghost">Falar comigo</a>
           </div>
         </div>
@@ -246,15 +264,15 @@
 
           <div class="about-stats">
             <div class="stat">
-              <div class="stat-num">4<span class="unit">+</span></div>
+              <div class="stat-num" data-count="4"><span class="count-val">0</span><span class="unit">+</span></div>
               <div class="stat-label">Anos de experiência</div>
             </div>
             <div class="stat">
-              <div class="stat-num">20<span class="unit">+</span></div>
+              <div class="stat-num" data-count="20"><span class="count-val">0</span><span class="unit">+</span></div>
               <div class="stat-label">Projetos Desenvolvidos</div>
             </div>
             <div class="stat">
-              <div class="stat-num">4</div>
+              <div class="stat-num" data-count="4"><span class="count-val">0</span></div>
               <div class="stat-label">Certificações Microsoft</div>
             </div>
           </div>
@@ -338,7 +356,7 @@
         </div>
 
         <div class="projects-grid">
-          <article class="project-card reveal">
+          <article class="project-card reveal" data-delay="1">
             <span class="project-type fullstack">Full Stack</span>
             <h3>Plataforma de Gestão de Pedidos</h3>
             <p>
@@ -353,7 +371,7 @@
             <a href="#" class="project-link">Ver case</a>
           </article>
 
-          <article class="project-card reveal">
+          <article class="project-card reveal" data-delay="2">
             <span class="project-type platform">Power Platform</span>
             <h3>Automação de Aprovação de Despesas</h3>
             <p>
@@ -368,7 +386,7 @@
             <a href="#" class="project-link">Ver case</a>
           </article>
 
-          <article class="project-card reveal">
+          <article class="project-card reveal" data-delay="3">
             <span class="project-type hybrid">Híbrido</span>
             <h3>Portal de Atendimento ao Cliente</h3>
             <p>
@@ -382,7 +400,7 @@
             <a href="#" class="project-link">Ver case</a>
           </article>
 
-          <article class="project-card reveal">
+          <article class="project-card reveal" data-delay="4">
             <span class="project-type fullstack">Full Stack</span>
             <h3>Dashboard Financeiro em Tempo Real</h3>
             <p>
@@ -395,7 +413,7 @@
             <a href="#" class="project-link">Ver case</a>
           </article>
 
-          <article class="project-card reveal">
+          <article class="project-card reveal" data-delay="5">
             <span class="project-type platform">Power Platform</span>
             <h3>Onboarding de Colaboradores</h3>
             <p>
@@ -409,7 +427,7 @@
             <a href="#" class="project-link">Ver case</a>
           </article>
 
-          <article class="project-card reveal">
+          <article class="project-card reveal" data-delay="6">
             <span class="project-type hybrid">Híbrido</span>
             <h3>Copiloto Interno de Suporte</h3>
             <p>
